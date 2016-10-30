@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.container {
+  font-family: 'Roboto', monospace;
+  margin: 15vh auto;
+  max-width: 90vw;
+  font-size: 14px;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: .3rem;
+  margin-bottom: .5rem;
+}
+
+.userinfo {
+  margin: 0px auto;
+  z-index: 2;
+}
+
+.username {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.username__wrapper {
+  display: flex;
+}
+
+.online {
+  width: 8px;
+  height: 8px;
+  background-color: #2E7D32;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: -10px;
+}
+
+.alias {
+  margin: 1vw;
+  color: #b0b0b0;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.lastlogin {
+  padding: 10px 0 5px 0;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #607d8b;
+}
+
+.username {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.container__left {
+  max-width: 400px;
+  width: 40%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.container__right {
+  width: 100%;
+  max-width: 30vw;
+}
+
+.holder {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,31 @@
+.container {
+  /*margin-top: 15px;*/
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.tasks {
+  margin-left: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showMore {
+  padding: 10px;
+  float: right;
+}
+
+.showMore__button {
+  /*float: right;*/
+}
+
+.list-item {
+  background-color: white !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+}

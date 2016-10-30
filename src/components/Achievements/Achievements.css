@@ -1,0 +1,39 @@
+.container {
+  background-color: #00b0ff !important;
+  border-radius: 50px;
+}
+
+.wrapper {
+  /*padding: 10px;*/
+}
+
+.subheader {
+  color: white !important;
+}
+
+.achievement {
+  background-color: white;
+  font-size: 14px !important;
+}
+
+.achieve__img-container {
+  height: 300px;
+  width: 100%;
+}
+
+.achieve__img {
+  display: block;
+  margin: 10px auto;
+  /*text-align: center;*/
+  /*background-position: center;*/
+}
+
+.no-achievements {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: #03a9f4;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 20px;
+}

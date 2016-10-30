@@ -1,0 +1,25 @@
+.container {
+  max-width: 80vw;
+}
+
+.no-tasks {
+  color: rgb(84, 110, 122);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.no-tasks__text {
+  align-self: center;
+  margin: 0px auto;
+  opacity: .5;
+  font-size: .9rem;
+}
+
+.notification-icon {
+  margin: 2rem;
+  width: 5vw !important;
+  height: 5vw !important;
+  opacity: .4;
+}

@@ -1,0 +1,40 @@
+.counters {
+  display: flex;
+  margin: 1vh auto;
+  padding: 0px 0 8px;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.counters__container {
+  margin: 0 auto;
+}
+
+.counter {
+  padding: 5px 3vw;
+  cursor: pointer;
+}
+
+.counter__title {
+  text-align: center;
+  color: #607d8b;
+}
+
+.counter--first {
+  composes: counter;
+  padding-left: .8vw;
+}
+
+.counter--last {
+  composes: counter;
+  padding-right: .8vw;
+}
+
+.counter__value {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #263238;
+}

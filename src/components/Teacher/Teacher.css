@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 6rem auto;
+  display: flex;
+}
+
+.tasks1 {
+  max-width: 800px;
+  width: 600px;
+}
+
+.right {
+  margin-left: 15px;
+}
+
+.students {
+  margin-top: 15px;
+}
+
+.groups {
+
+}

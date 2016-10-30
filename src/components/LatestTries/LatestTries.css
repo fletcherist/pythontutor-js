@@ -1,0 +1,37 @@
+.container {
+	margin-bottom: 15px;
+}
+
+.button {
+	width: 100%;
+	margin-left: auto;
+	background-color: #eeeeee !important;
+}
+
+.button__wrapper {
+	width: 100%;
+	display: block;
+}
+
+.time {
+	color: #78909c !important;
+	font-size: 0.8rem;
+}
+
+.item {
+	background-color: white !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	-moz-appearance: none !important;
+}
+
+.title {
+	margin-left: 20px;
+}
+
+.test {
+	background-color: #f0f;
+	height: 100px;
+	width: 100px;
+}
+

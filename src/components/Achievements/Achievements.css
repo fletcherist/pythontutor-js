@@ -9,6 +9,8 @@
 
 .subheader {
   color: white !important;
+  display: flex;
+  padding: 10px;
 }
 
 .achievement {
@@ -33,7 +35,18 @@
   color: white;
   text-transform: uppercase;
   background-color: #03a9f4;
-  font-weight: bold;
-  font-size: 1.4rem;
-  padding: 20px;
+  font-size: 0.8rem;
+  padding: 30px 0px 20px;
+}
+
+.no-achievements__text {
+  margin-top: 10px;
+}
+
+.icon {
+  padding: 0px 8px 0px 3px;
+}
+
+.title {
+  align-self: center;
 }

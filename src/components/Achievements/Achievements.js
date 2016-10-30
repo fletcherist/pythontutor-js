@@ -8,6 +8,8 @@ import { __pythontutorUrl } from '../../api/api'
 import avoidWordSolve from '../../util/avoidWordSolve'
 import ShareIcon from 'material-ui/svg-icons/social/share'
 import IconButton from 'material-ui/IconButton'
+import GradeIcon from 'material-ui/svg-icons/action/grade'
+import LockOutline from 'material-ui/svg-icons/action/lock-outline'
 
 @CSSModules(s)
 class Achievements extends Component {
@@ -54,7 +56,10 @@ class Achievements extends Component {
     }
 
     return (
-      <div styleName='no-achievements'>пусто</div>
+      <div styleName='no-achievements'>
+        <LockOutline color='white' />
+        <div styleName='no-achievements__text'>нет достижений</div>
+      </div>
     )
   }
 
@@ -63,7 +68,10 @@ class Achievements extends Component {
 
     return (
       <Paper styleName='container'>
-        <Subheader styleName='subheader'>Ачивки</Subheader>
+        <div styleName='subheader'>
+          <GradeIcon color='#ffd600' styleName='icon' />
+          <div styleName='title'>Ачивки</div>
+        </div>
         <div styleName='wrapper'>
           {this.renderAchievements()}
           {this.renderNoAchievements()}

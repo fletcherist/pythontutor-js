@@ -41,7 +41,7 @@ import Avatar from 'components/Avatar'
           {/* <div styleName='online' /> */}
         </div>
         {/* <div styleName='alias'>@{alias}</div> */}
-        {this.renderOnline()}
+        {/*this.renderOnline() */}
       </div>
     )
   }
@@ -52,6 +52,12 @@ import Avatar from 'components/Avatar'
       return null
     }
     return (<Lessons lessons={lessons}/>)
+  }
+
+  renderAchievements () {
+    const { achievements } = this.props.store.user
+    if (!this.props.store.fetched) return <Loading />
+    return <Achievements achievements={achievements} />
   }
 
   render () {
@@ -67,9 +73,7 @@ import Avatar from 'components/Avatar'
             </div>
             <Counters {...this.props.store.stats} />
           </Paper>
-          <Achievements
-            achievements={achievements}
-          />
+          {this.renderAchievements()}
         </div>
         <div styleName='container__right'>
           <LatestTries lastSolved={lastSolved} />

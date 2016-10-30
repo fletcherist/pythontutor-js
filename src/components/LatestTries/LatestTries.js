@@ -67,8 +67,6 @@ class LatestTries extends Component {
 						onClick={this.toggle.bind(this)}
 						label={buttonLabel}/>
 				</div>
-
-				<div styleName='test'></div>
 			</Paper>
 		)
 	}

@@ -29,3 +29,17 @@ a {
   appearance: none !important;
   -moz-appearance: none !important;
 }
+
+.subheader {
+  display: flex;
+  padding: 10px;
+}
+.icon {
+  padding: 0px 8px 0px 3px;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.title {
+  align-self: center;
+}

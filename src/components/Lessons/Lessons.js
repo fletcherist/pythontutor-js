@@ -21,6 +21,8 @@ import _pronounce from 'util/pronounce'
 import _countSolvedProblems from '../../util/countSolvedProblems'
 import FlatButton from 'material-ui/FlatButton'
 
+import { LessonsTitle } from 'components/Titles'
+
 @CSSModules(s)
 @observer class Lessons extends Component {
   @observable isListExpanded = false
@@ -123,7 +125,7 @@ import FlatButton from 'material-ui/FlatButton'
     return (
       <div styleName='container'>
         <Paper zDepth={1}>
-          <Subheader>Прогресс</Subheader>
+          <LessonsTitle />
           <List>
             {this.renderLessons()}
           </List>

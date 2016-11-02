@@ -15,6 +15,9 @@ import { observable, action } from 'mobx'
 import { timeSince } from 'util/timeSince'
 import Divider from 'material-ui/Divider'
 
+import { LastTriesTitle } from 'components/Titles'
+
+
 @observer
 @CSSModules(s)
 class LatestTries extends Component {
@@ -57,7 +60,7 @@ class LatestTries extends Component {
 
 		return (
 			<Paper styleName='container'>
-				<Subheader>Последние решенные задачи</Subheader>
+				<LastTriesTitle />
 				<List>
 					{solved}
 				</List>

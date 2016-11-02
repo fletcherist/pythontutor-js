@@ -7,11 +7,6 @@
   /*padding: 10px;*/
 }
 
-.subheader {
-  color: white !important;
-  display: flex;
-  padding: 10px;
-}
 
 .achievement {
   background-color: white;
@@ -41,14 +36,4 @@
 
 .no-achievements__text {
   margin-top: 10px;
-}
-
-.icon {
-  padding: 0px 8px 0px 3px;
-  height: 25px !important;
-  width: 25px !important;
-}
-
-.title {
-  align-self: center;
 }

@@ -1,4 +1,4 @@
-The controller to rule the achievements modal window.
+*The controller to rule the achievements modal window.*
 
 
 ### API
@@ -10,7 +10,7 @@ window._achievementsController.achievements.push(%achievement%)
 
 @achievements — an array of achievements
 
-*%achievement%* - an object, contains achievement
+**%achievement%** - an object, contains achievement
 ex.
 
 ```json

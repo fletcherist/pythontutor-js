@@ -15,11 +15,13 @@
   padding: 5px 20px;
   cursor: pointer;
   width: 33%;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 
 .counter__title {
   text-align: center;
-  color: #607d8b;
+  color: #616161;
 }
 
 .counter--first {

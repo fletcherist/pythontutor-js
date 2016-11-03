@@ -8,6 +8,11 @@ class AchievementsModal {
       "description": "решено 2 задачи",
       "name": "solved2",
       "img": "/static/images/achievements/new_solved2.png"
+    },
+    {
+      "description": "ещё ачивка",
+      "name": "solved2",
+      "img": "/static/images/achievements/new_solved2.png"
     }
 	]
 
@@ -17,7 +22,12 @@ class AchievementsModal {
 
 	@action closeModal = () => {
 		this.isVisible = false
-		delete this.achievements[0]
+		this.achievements.splice(0, 1)
+		if (this.achievements.length > 0) {
+			setTimeout(() => {
+				this.openModal()
+			}, 500)
+		}
 		console.log(this.achievements)
 	}
 }

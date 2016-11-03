@@ -31,8 +31,7 @@ class AchievementsModal extends Component {
     }
 
     const { description, img, name } = currentAchievement
-
-    console.log(__pythontutorUrl + img)
+    
     return (
       <div styleName='modal'>
         <img styleName='image' src={__pythontutorUrl + img} height='150'/>
@@ -56,6 +55,8 @@ class AchievementsModal extends Component {
   renderTitle () {
     const { achievements, isVisible } = this.props.store
     const currentAchievement = achievements[0]
+    if (!currentAchievement) return null
+
     const { description, img, name } = currentAchievement
     return (
         <div>
@@ -87,7 +88,6 @@ class AchievementsModal extends Component {
     ]
 
     const currentAchievement = achievements[0]
-    const { description, img, name } = currentAchievement
 
 		return (
 			<div styleName='wrapper'>

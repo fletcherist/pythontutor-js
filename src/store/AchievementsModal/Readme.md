@@ -5,7 +5,7 @@
 
 **Push an achievement**
 ```javascript
-window._achievementsController.achievements.push(%achievement%)
+window._achievementsController.pushAchievement(%achievement%)
 ```
 
 @achievements — an array of achievements
@@ -29,5 +29,5 @@ window._achievementsController.openModal()
 
 **Close modal window**
 ```javascript
-window._achievementsController.openModal()
+window._achievementsController.closeModal()
 ```

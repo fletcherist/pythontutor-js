@@ -11,12 +11,12 @@ window._achievementsController.achievements.push()
 @achievements — an array of achievements
 
 ex.
-```
-		{
-      "description": "решено 2 задачи",
-      "name": "solved2",
-      "img": "/static/images/achievements/new_solved2.png"
-    }
+```json
+{
+  "description": "решено 2 задачи",
+  "name": "solved2",
+  "img": "/static/images/achievements/new_solved2.png"
+}
 ```
 
 

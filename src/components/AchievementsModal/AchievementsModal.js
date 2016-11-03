@@ -16,7 +16,11 @@ import StarsIcon from 'material-ui/svg-icons/action/stars'
 import {
   shareFacebookTitle,
   shareVkTitle,
-  shareTwitterTitle
+  shareTwitterTitle,
+
+  shareFacebookDescription,
+  shareVkDescription,
+  shareTwitterDescription
 } from 'util/texts'
 
 @CSSModules(s)
@@ -31,19 +35,19 @@ class AchievementsModal extends Component {
     }
 
     const { description, img, name } = currentAchievement
-    
+
     return (
       <div styleName='modal'>
         <img styleName='image' src={__pythontutorUrl + img} height='150'/>
         <div styleName='share'>
           <div styleName='share__holder'>
-            <a href={`http://www.facebook.com/sharer.php?u=${__pythontutorUrl}/?t=${shareFacebookTitle}`}>
+            <a href={`http://www.facebook.com/sharer.php?u=${__pythontutorUrl}/?t=${shareFacebookTitle()}`}>
               <FacebookIcon styleName='icon'/>
             </a>
-           <a href={`http://twitter.com/share?url=${__pythontutorUrl}/?text=${shareTwitterTitle}?via=asd`}>
+           <a href={`http://twitter.com/share?url=${__pythontutorUrl}/?text=${shareTwitterTitle()}?via=asd`}>
               <TwitterIcon styleName='icon'/>
             </a>
-            <a href={`http://vk.com/share.php?url=${__pythontutorUrl}&title=${shareVkTitle}&description=фывфывфвывфывфы`}>
+            <a href={`http://vk.com/share.php?url=${__pythontutorUrl}&title=${shareVkTitle()}&description=${shareVkDescription()}`}>
               <VkIcon styleName='icon'/>
             </a>
           </div>

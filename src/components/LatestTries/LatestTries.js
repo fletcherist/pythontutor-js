@@ -50,6 +50,19 @@ class LatestTries extends Component {
 			</div>
 		)
 	}
+
+	renderExpandButton () {
+		if (this.props.lastSolved.length < 4) return null
+		return (
+			<div styleName='button__wrapper'>
+				<FlatButton
+					styleName='button'
+					onClick={this.toggle.bind(this)}
+					label={buttonLabel}/>
+			</div>
+		)
+	}
+
 	render () {
 		if (this.props.lastSolved.length === 0) return null
 		const solved = this.props.lastSolved.map((problem, i) => this.renderOneTry(problem, i))
@@ -64,12 +77,7 @@ class LatestTries extends Component {
 				<List>
 					{solved}
 				</List>
-				<div styleName='button__wrapper'>
-					<FlatButton
-						styleName='button'
-						onClick={this.toggle.bind(this)}
-						label={buttonLabel}/>
-				</div>
+				{this.renderExpandButton()}
 			</Paper>
 		)
 	}

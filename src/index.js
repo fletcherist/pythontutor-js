@@ -11,6 +11,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import 'whatwg-fetch'
 
+import DevTools from 'mobx-react-devtools'
+
 import teacherStore from 'store/Teacher'
 
 injectTapEventPlugin()
@@ -82,6 +84,12 @@ function render (reactComponent) {
 function renderThemAll () {
   for (const component in components) {
     render(components[component])
+  }
+
+  let devtools = document.querySelector('#devtools')
+  console.log(devtools)
+  if (devtools) {
+    ReactDOM.render(React.createElement(DevTools), devtools)
   }
 }
 renderThemAll()

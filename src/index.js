@@ -87,7 +87,6 @@ function renderThemAll () {
   }
 
   let devtools = document.querySelector('#devtools')
-  console.log(devtools)
   if (devtools) {
     ReactDOM.render(React.createElement(DevTools), devtools)
   }

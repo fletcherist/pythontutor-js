@@ -20,21 +20,12 @@ class Achievements extends Component {
 
     const formattedDescription = avoidWordSolve(description)
     return (
-      <GridTile
-        styleName='achievement'
-        title={'решено:'}
-        subtitle={formattedDescription}
-        titlePosition='bottom'
-        titleBackground='#a5cadb'
-        containerElement='div'
-        cols={0}>
-        <div styleName='achieve__img-container'>
-          <img 
-            styleName='achieve__img'
-            src={__pythontutorUrl + img}
-            height='100' width='100' />
-        </div>
-      </GridTile>
+      <div>
+        <img 
+          styleName='achieve__img'
+          src={__pythontutorUrl + img}
+          height='60' width='60' />
+      </div>
     )
   }
 
@@ -44,10 +35,9 @@ class Achievements extends Component {
       return null
     }
     return (
-      <GridList
-        padding={6}>
+      <div styleName='achieve__img-container'>
         {achievements.map(achievement => this.renderAchievement(achievement))}
-      </GridList>
+      </div>
     )
   }
 

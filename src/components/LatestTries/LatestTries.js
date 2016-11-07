@@ -53,6 +53,9 @@ class LatestTries extends Component {
 
 	renderExpandButton () {
 		if (this.props.lastSolved.length < 4) return null
+		let buttonLabel = this.isCollapsed 
+			? 'развернуть'
+			: 'свернуть'
 		return (
 			<div styleName='button__wrapper'>
 				<FlatButton
@@ -67,9 +70,6 @@ class LatestTries extends Component {
 		if (this.props.lastSolved.length === 0) return null
 		const solved = this.props.lastSolved.map((problem, i) => this.renderOneTry(problem, i))
 
-		let buttonLabel = this.isCollapsed 
-			? 'развернуть'
-			: 'свернуть'
 
 		return (
 			<Paper styleName='container'>

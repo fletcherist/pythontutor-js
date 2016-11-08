@@ -21,7 +21,7 @@ class Profile {
 	  if (alias) link += '?username=' + alias
 	  console.log(link)
 		console.log(_testProfile)
-	  fetch(_testProfile, { credentials: 'include' })
+	  fetch(link, { credentials: 'include' })
 	    .then(r => r.json())
 	    .then(r => {
 	      console.log(r)

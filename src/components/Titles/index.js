@@ -19,7 +19,7 @@ export class AchievementsTitle extends Component {
 	}
 	render () {
 		return (
-			<div styleName='subheader--white'>
+			<div styleName='subheader--bold'>
 			  <GradeIcon color='#ffd600' styleName='icon' />
 			  <div styleName='title'>{this.renderTitle()}</div>
 			</div>

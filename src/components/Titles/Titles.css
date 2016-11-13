@@ -3,9 +3,9 @@
   padding: 10px;
 }
 
-.subheader--white {
+.subheader--bold {
 	composes: subheader;
-	color: white !important;
+	font-weight: bold;
 }
 .icon {
   padding: 0px 8px 0px 3px;

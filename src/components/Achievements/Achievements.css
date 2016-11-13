@@ -1,5 +1,5 @@
 .container {
-  background-color: white !important;
+  background-color: #FFFAC3 !important;
   border-radius: 50px;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .achievements__title-holder {
-  background-color: #00b0ff !important; 
+  /*background-color: #00b0ff !important; */
 }
 
 .achieve__img-container {

@@ -12,7 +12,7 @@ class Profile {
 	@observable stats = {
 	  solved: 0,
 	  progress: 0,
-	  allSubmissions: 0,
+	  allSubmissions: 0
 	}
 
 	@action fetchData () {
@@ -21,7 +21,7 @@ class Profile {
 	  if (alias) link += '?username=' + alias
 	  console.log(link)
 		console.log(_testProfile)
-	  fetch(link, { credentials: 'include' })
+	  fetch(_testProfile, { credentials: 'include' })
 	    .then(r => r.json())
 	    .then(r => {
 	      console.log(r)

@@ -60,7 +60,9 @@ class Achievements extends Component {
 
     return (
       <Paper styleName='container'>
-        <AchievementsTitle />
+        <div styleName='achievements__title-holder'>
+          <AchievementsTitle count={achievements.length}/>
+        </div>
         <div styleName='wrapper'>
           {this.renderAchievements()}
           {this.renderNoAchievements()}

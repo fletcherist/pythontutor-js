@@ -7,12 +7,6 @@
   /*padding: 10px;*/
 }
 
-
-.achievement {
-  /*background-color: white;*/
-  font-size: 14px !important;
-}
-
 .achievements__title-holder {
   background-color: #00b0ff !important; 
 }
@@ -20,7 +14,6 @@
 .achieve__img-container {
   /*height: 300px;*/
   /*width: 100%;*/
-  /*display: flex;*/
   /*overflow-x: scroll;*/
   padding: 10px 15px;
 }
@@ -30,6 +23,8 @@
   height: 70px;
   cursor: pointer;
   margin: 5px 15px;
+  display: inline-block;
+  padding: 15px 20px;
   /*text-align: center;*/
   /*background-position: center;*/
 }

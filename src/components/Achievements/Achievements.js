@@ -20,12 +20,10 @@ class Achievements extends Component {
 
     const formattedDescription = avoidWordSolve(description)
     return (
-      <div>
-        <img 
-          styleName='achieve__img'
-          src={__pythontutorUrl + img}
-          height='60' width='60' />
-      </div>
+      <img 
+        styleName='achieve__img'
+        src={__pythontutorUrl + img}
+        height='60' width='60' />
     )
   }
 

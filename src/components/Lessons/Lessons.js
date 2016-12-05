@@ -28,7 +28,6 @@ import { LessonsTitle } from 'components/Titles'
   @observable isListExpanded = false
   @action expandList () {
     this.isListExpanded = true
-    console.log('list was expanded')
   }
 
   renderLessons () {
@@ -39,7 +38,6 @@ import { LessonsTitle } from 'components/Titles'
     return (
       this.props.lessons.map((lesson, i) => {
         const { title, url, problems, open } = lesson
-        console.log(this.isListExpanded)
 
         // 0 - is the first
         const ITEMS_TO_SHOW = 3 - 1

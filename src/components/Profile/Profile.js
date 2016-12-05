@@ -57,7 +57,10 @@ import Avatar from 'components/Avatar'
   renderAchievements () {
     const { achievements } = this.props.store.user
     if (!this.props.store.fetched) return <Loading />
-    return <Achievements achievements={achievements} />
+    return <Achievements
+      achievements={achievements}
+      store={this.props.store.user}
+    />
   }
 
   render () {

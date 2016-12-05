@@ -13,9 +13,9 @@ export class AchievementsTitle extends Component {
 	renderTitle () {
 		const { count } = this.props
 		if (count && count !== 0) {
-			return `${count} ${pronounce(count, ['Ачивка', 'Ачивки', 'Ачивок'])}`
+			return `${count} ${pronounce(count, ['ачивка', 'ачивки', 'ачивок'])}`
 		}
-		return 'Ачивки'
+		return 'ачивки'
 	}
 	render () {
 		return (

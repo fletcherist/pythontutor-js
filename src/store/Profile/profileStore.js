@@ -15,20 +15,22 @@ class Profile {
 	  allSubmissions: 0
 	}
 
+	@observable hello = 'world'
+
 	@action fetchData () {
 	  const alias = window.location.href.split('/')[4]
 	  let link = profile
 	  if (alias) link += '?username=' + alias
-	  console.log(link)
-		console.log(_testProfile)
+		// console.log(_testProfile)
 	  fetch(link, { credentials: 'include' })
 	    .then(r => r.json())
 	    .then(r => {
-	      console.log(r)
+	      // console.log(r)
 	      this.user.alias = r.user_name
 	      this.user.lessons = r.lessons
 	      this.user.lastLogin = r.last_logged_in
 	      this.user.username = r.user_first_name + ' ' + r.user_last_name
+
 	      this.user.achievements = r.achievements
 	      this.user.lastSolved = r.last_solved_problems
 

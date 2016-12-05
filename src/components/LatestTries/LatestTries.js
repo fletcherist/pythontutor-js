@@ -29,7 +29,6 @@ class LatestTries extends Component {
 	}
 
 	renderOneTry (obj, i) {
-		console.log(i)
 		if (i >= 3 && this.isCollapsed) return null
 		const { problem_title, time, url } = obj
 		const label = 
@@ -39,9 +38,7 @@ class LatestTries extends Component {
 			</div>)
 		return (
 			<div>
-				{i !== 0 && (
-					<Divider />
-				)}
+				{i !== 0 && (<Divider />)}
 				<ListItem
 					styleName='item'
 					primaryText={label}

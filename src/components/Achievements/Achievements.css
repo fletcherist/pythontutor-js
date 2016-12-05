@@ -1,20 +1,16 @@
 .container {
-  background-color: #FFFAC3 !important;
+  /*background-color: #FFFAC3 !important;*/
+  background-color: #fffde7 !important;
   border-radius: 50px;
 }
 
 .wrapper {
-  /*padding: 10px;*/
 }
 
 .achievements__title-holder {
-  /*background-color: #00b0ff !important; */
 }
 
 .achieve__img-container {
-  /*height: 300px;*/
-  /*width: 100%;*/
-  /*overflow-x: scroll;*/
   padding: 10px 15px;
 }
 
@@ -25,19 +21,44 @@
   margin: 5px 15px;
   display: inline-block;
   padding: 15px 20px;
-  /*text-align: center;*/
-  /*background-position: center;*/
+}
+
+.achieve__text {
+  text-transform: uppercase;
 }
 
 .no-achievements {
   text-align: center;
-  color: white;
   text-transform: uppercase;
-  background-color: #03a9f4;
   font-size: 0.8rem;
   padding: 30px 0px 20px;
 }
 
 .no-achievements__text {
   margin-top: 10px;
+}
+
+.achieve {
+  width: 50%;
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.achieve--locked {
+  opacity: .2;
+}
+
+.load-more {
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .08);
+  transition: color .1s;
+}
+
+.load-more:hover {
+  color: #757575;
 }

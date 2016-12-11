@@ -15,6 +15,7 @@ class Teacher extends Component {
   constructor (props) {
     super(props)
     props.store.fetchTeacher()
+    props.store.fetchSubmissions()
   }
 
   renderStudents () {
@@ -48,13 +49,13 @@ class Teacher extends Component {
   }
 
   render () {
-    const { students, groups, isFetched } = this.props.store
+    const { students, groups, submissions, isFetched } = this.props.store
     if (!isFetched) return null
     return (
       <div styleName='container'>
         <div styleName='wrapper'>
           <div styleName='tasks1'>
-            <Tasks />
+            <Tasks submissions={submissions}/>
           </div>
           <div styleName='right'>
             <div styleName='groups'>

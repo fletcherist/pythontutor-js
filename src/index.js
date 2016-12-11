@@ -12,7 +12,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import 'whatwg-fetch'
 
 import DevTools from 'mobx-react-devtools'
-
 import teacherStore from 'store/Teacher'
 
 injectTapEventPlugin()

@@ -23,3 +23,29 @@
   height: 5vw !important;
   opacity: .4;
 }
+
+.submission {
+  display: flex;
+  align-items: center;
+}
+
+.submission:hover {
+  background-color: gray;
+}
+
+.time {
+  margin: .5rem;
+}
+
+.author {
+  margin: .5rem;
+  max-width: 20%;
+}
+
+.task {
+  margin: .5rem;
+}
+
+.status {
+  width: 10%;
+}

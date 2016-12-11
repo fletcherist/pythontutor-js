@@ -4,19 +4,31 @@ import s from './Tasks.css'
 import CSSModules from 'react-css-modules'
 import { observer } from 'mobx-react'
 import NotificationsIcon from 'material-ui/svg-icons/social/notifications-none'
+import { timeSince } from 'util/timeSince'
 
 @CSSModules(s)
 @observer
 class Tasks extends Component {
   renderTask (sub) {
     console.log(sub)
-    const { comment, first_name, last_name, status } = sub
+    const { comment, first_name, last_name, status, time, problem } = sub
+    const { title } = problem
     return (
-      <div>{first_name} { last_name }</div>
+      <div styleName='submission'>
+        <div styleName='time'>{timeSince(new Date(time))}</div>
+        <div styleName='author'>
+          {first_name}
+          {' '}
+          {last_name}
+        </div>
+        <div styleName='task'>
+          {title}
+        </div>
+        <div styleName='status'>ok</div>
+      </div>
     )
   }
   render () {
-    console.log(this.props.submissions)
     const submissions = this.props.submissions.map(sub => this.renderTask(sub))
     return (
       <Paper styleName='container'>

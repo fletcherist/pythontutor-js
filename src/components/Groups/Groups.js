@@ -10,7 +10,9 @@ class Groups extends Component {
   renderGroup (group) {
     const { title, id } = group
     return (
-      <ListItem primaryText={title} />
+      <ListItem
+        styleName='item'
+        primaryText={title} />
     )
   }
   render () {
